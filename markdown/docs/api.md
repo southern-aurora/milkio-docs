@@ -47,21 +47,28 @@ export const foo = defineApi({
 你还可以利用 [Typia](https://typia.io/docs/validators/tags/) 实现更复杂的校验。
 
 ```ts
-import typia from "typia";
-// ...
-action(
-  params: {
-    id: string & typia.tags.Format<"uuid">;
-    email: string & typia.tags.Format<"email">;
-    age: number
-        & typia.tags.Type<"uint32">
-        & typia.tags.ExclusiveMinimum<19>
-        & typia.tags.Maximum<100>;
+import { defineApi, defineFail } from "southern-aurora-bao";
+
+export const foo = defineApi({
+  meta: {
+    //
   },
-  context
-) {
-// ...
-}
+  action(
+    // check your params // [!code focus:6]
+    params: {
+      id: string & typia.tags.Format<"uuid">;
+      email: string & typia.tags.Format<"email">;
+      age: number & typia.tags.Type<"uint32"> & typia.tags.ExclusiveMinimum<19> & typia.tags.Maximum<100>;
+    },
+    context
+  ) {
+    const message = "hello world, your email: " + params.email;
+
+    return {
+      say: message,
+    };
+  },
+});
 ```
 
 ### context 参数

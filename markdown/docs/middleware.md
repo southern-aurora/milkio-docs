@@ -65,6 +65,12 @@ const middleware = useMiddleware(your_priority_index);
 可能上面的表述不是很好理解，看下面的例子，你就会很直观的明白：
 
 ```ts
+// output: // [!code focus:5]
+// onBeforeExecute 1
+// onBeforeExecute 2
+// onAfterExecute 2
+// onAfterExecute 1
+
 // file: /src/bootstrap/middleware-your-example.ts
 
 import { defineFail, useMeta, useMiddleware } from "southern-aurora-bao";
@@ -86,13 +92,4 @@ export default function () {
     console.log("onAfterExecute 2");
   });
 }
-```
-
-执行的结果将会是：
-
-```sh
-onBeforeExecute 1
-onBeforeExecute 2
-onAfterExecute 2
-onAfterExecute 1
 ```

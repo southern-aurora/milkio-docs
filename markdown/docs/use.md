@@ -1,6 +1,6 @@
 # Use
 
-Use 位于 `/src/use` 目录，它是一个没有任何"魔法"的目录。我们约定俗成，将一些通用的功能放在这里，并以 `use` 开头。
+Use 位于 `/src/use` 目录，它是一个没有任何"魔法"的目录。我们约定俗成，将一些通用的功能放在这里，并以 `use-*.ts` 的格式命名。
 
 ## 编写
 
@@ -12,7 +12,6 @@ export type UseSayHelloOptions = {
 };
 
 export function useSayHello(options: UseSayHelloOptions) {
-
   // ...
 
   return {
