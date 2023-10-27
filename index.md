@@ -144,9 +144,9 @@ const result = await client.execute("hello/world", { name: "alice" });
 const result = await client.execute("hello/world", { name: "alice" });
 ```
 
-包是可以自由定制的，你甚至可以将你的业务逻辑写在包中，譬如，当 Token 失效后自动刷新 Token。
+包是可以自由定制的，这意味着你可以在 Bun 或 NodeJs、浏览器、甚至是 React Native 或各种小程序中使用。你甚至可以将你的业务逻辑写在包中，譬如，当 Token 失效后自动刷新 Token。
 
-The package can be customized freely, and you can even write your business logic in the package, for example, automatically refresh the Token when the Token expires.
+The package can be customized freely, which means that you can use it in Bun or NodeJs, browser, or even React Native or various Small Programs. You can even write your business logic in the package, for example, automatically refresh the token when the token expires.
 
 #### 第四个麻烦：自动化测试
 
