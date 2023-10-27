@@ -38,7 +38,7 @@ At this time, Bun's `1.0` version was released. I decided to use her to write th
 
 我崇尚 Go 语言之父 Rob Pike 的"大道至简"。
 
-I admire Rob Pike, the father of Go, "The Way of Simplicity".
+I admire Rob Pike, the father of Go, "Simplicity is Complicated".
 
 学习曲线，是我在设计 Bao 之初最关注的地方。我希望 Bao 能够尽可能的简单，即便是没有后端经验的前端开发者，也可以在 1 天之内学会 Bao 并开始编写你的后端代码。
 
