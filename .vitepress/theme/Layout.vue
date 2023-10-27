@@ -173,7 +173,7 @@ onMounted(() => {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 960px) {
   .language-selector {
     width: 100%;
     flex-direction: column;

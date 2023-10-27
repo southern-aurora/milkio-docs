@@ -7,3 +7,13 @@
 .VPDoc .content {
   max-width: 720px;
 }
+
+.VPLocalNavOutlineDropdown {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .VPNavScreenMenu {
+    display: none;
+  }
+}
