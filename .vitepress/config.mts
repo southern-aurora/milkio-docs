@@ -3,8 +3,8 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/bao-docs/",
-  title: "BAO",
-  description: "高性能的 Bun 框架，以人为本，像你代码中的人体工学椅",
+  title: "Bao Docs",
+  description: "A human-centered Bun framework, developing APIs is now easy enough!",
   outDir: "./docs",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
