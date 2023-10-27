@@ -49,7 +49,7 @@ export default defineConfig({
           },
           {
             text: `
-              <span class="lang-en">Generation phase</span>
+              <span class="lang-en">GenerationPhase</span>
               <span class="lang-zh">生成阶段</span>
             `,
             link: "/markdown/docs/generation-phase",
@@ -62,20 +62,104 @@ export default defineConfig({
           <span class="lang-zh">能力</span>
         `,
         items: [
-          { text: "Api", link: "/markdown/docs/api" },
-          { text: "Middleware", link: "/markdown/docs/middleware" },
-          { text: "Bootstrap", link: "/markdown/docs/bootstrap" },
-          { text: "Use", link: "/markdown/docs/use" },
-          { text: "Meta", link: "/markdown/docs/meta" },
-          { text: "Context", link: "/markdown/docs/context" },
-          { text: "Config", link: "/markdown/docs/config" },
-          { text: "FrameworkConfig", link: "/markdown/docs/framework-config" },
-          { text: "Cache", link: "/markdown/docs/cache" },
-          { text: "Database", link: "/markdown/docs/database" },
-          { text: "Logger", link: "/markdown/docs/logger" },
-          { text: "Fail", link: "/markdown/docs/fail" },
-          { text: "Client", link: "/markdown/docs/client" },
-          { text: "Test", link: "/markdown/docs/test" },
+          {
+            text: `
+              <span class="lang-en">Api</span>
+              <span class="lang-zh">Api 接口</span>
+            `,
+            link: "/markdown/docs/api",
+          },
+          {
+            text: `
+              <span class="lang-en">Middleware</span>
+              <span class="lang-zh">Middleware 中间件</span>
+            `,
+            link: "/markdown/docs/middleware",
+          },
+          {
+            text: `
+              <span class="lang-en">Bootstrap</span>
+              <span class="lang-zh">Bootstrap 启动项</span>
+            `,
+            link: "/markdown/docs/bootstrap",
+          },
+          {
+            text: `
+              <span class="lang-en">Use</span>
+              <span class="lang-zh">Use 使用</span>
+            `,
+            link: "/markdown/docs/use",
+          },
+          {
+            text: `
+              <span class="lang-en">Meta</span>
+              <span class="lang-zh">Meta 元数据</span>
+            `,
+            link: "/markdown/docs/meta",
+          },
+          {
+            text: `
+              <span class="lang-en">Context</span>
+              <span class="lang-zh">Context 上下文</span>
+            `,
+            link: "/markdown/docs/context",
+          },
+          {
+            text: `
+              <span class="lang-en">Config</span>
+              <span class="lang-zh">Config 配置</span>
+            `,
+            link: "/markdown/docs/config",
+          },
+          {
+            text: `
+              <span class="lang-en">ConfigFramework</span>
+              <span class="lang-zh">ConfigFramework 框架配置</span>
+            `,
+            link: "/markdown/docs/config-framework",
+          },
+          {
+            text: `
+              <span class="lang-en">Cache</span>
+              <span class="lang-zh">Cache 缓存</span>
+            `,
+            link: "/markdown/docs/cache",
+          },
+          {
+            text: `
+              <span class="lang-en">Logger</span>
+              <span class="lang-zh">Logger 日志</span>
+            `,
+            link: "/markdown/docs/logger",
+          },
+          {
+            text: `
+              <span class="lang-en">Database</span>
+              <span class="lang-zh">Database 数据库</span>
+            `,
+            link: "/markdown/docs/database",
+          },
+          {
+            text: `
+              <span class="lang-en">FailureHandling</span>
+              <span class="lang-zh">FailureHandling 失败处理</span>
+            `,
+            link: "/markdown/docs/fail-handling",
+          },
+          {
+            text: `
+              <span class="lang-en">Client</span>
+              <span class="lang-zh">Client 客户端</span>
+            `,
+            link: "/markdown/docs/client",
+          },
+          {
+            text: `
+              <span class="lang-en">Test</span>
+              <span class="lang-zh">Test 测试</span>
+            `,
+            link: "/markdown/docs/test",
+          },
         ],
       },
       {

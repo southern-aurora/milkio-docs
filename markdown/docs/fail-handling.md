@@ -1,8 +1,8 @@
 ---
-title: Fail
+title: Fail Handling
 ---
 
-# Fail
+# Fail Handling
 
 失败通常有两种，一种是意料外的错误导致的失败，比如网络错误、堆栈溢出等，另一种是业务上的失败，例如用户不存在、订单已支付等。
 

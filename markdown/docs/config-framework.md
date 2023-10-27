@@ -1,8 +1,8 @@
 ---
-title: Framework Config
+title: Config Framework
 ---
 
-# Framework Config
+# Config Framework
 
 在 [Config](/markdown/docs/config.md) 章节中，我们介绍了如何编写配置文件。其实，Bao 自身也拥有一些内置配置。你可以通过导入 `configFramework` 来读取这些配置。
 
