@@ -24,9 +24,9 @@ Bao Docs uses VitePress as the framework for the documentation site and Markdown
 
 But it has some special features: you may notice that in the `.md` source file of the document, each line is written in Chinese, English, Chinese, English... order. Including the title, even if some titles are written in English in Chinese.
 
-是的，这是因为 Bao Docs 的文档是双语的，我们会在每一行的后面添加英文翻译。这么做，有助于文档的编写者同时书写多种语言的文档，而不需要为每一种语言的文档，都创建一个新的页面。
+是的，这是因为 Bao Docs 的文档是双语的，我们会在每一行的后面添加英文翻译。这么做，有助于文档的编写者同时书写多种语言的文档，而不需要为每一种语言的文档，都创建一个新的页面。我们编写的 VitePress 组件会根据行号是否是偶数，自动的将中文和英文的文档分离开来。
 
-Yes, this is because the documentation of Bao Docs is bilingual, and we will add English translation at the end of each line. This makes it easier for the documentation writer to write documents in multiple languages at the same time without having to create a new page for each language.
+Yes, this is because the documentation of Bao Docs is bilingual, and we will add English translation at the end of each line. This makes it easier for the documentation writer to write documents in multiple languages at the same time without having to create a new page for each language. The VitePress component we wrote will automatically separate the Chinese and English documents according to whether the line number is even.
 
 暂时的，Bao Docs 官方只维护中文和英文两种语言的文档。我们希望官方的文档尽量保证及时和准确，而我们的团队成员只能够阅读和书写中文（母语）与英文两种语言。我们非常欢迎社区的开发者们，建立并维护自己的其他语言的 Bao Docs 文档站点，如果你创建了一个新的站点，欢迎通过 Issue 告诉我们，我们会在官方文档中为你的站点添加链接。
 
