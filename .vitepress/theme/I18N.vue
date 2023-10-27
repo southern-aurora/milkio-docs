@@ -6,4 +6,12 @@
   </div>
 </template>
 
-<style></style>
+<style>
+:not(.i18n-loaded) .enable-i18n {
+  display: none;
+}
+
+.i18n-loaded .enable-i18n {
+  display: block;
+}
+</style>

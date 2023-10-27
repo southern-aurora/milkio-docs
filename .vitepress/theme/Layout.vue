@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref } from "vue";
+import { onMounted, ref, nextTick } from "vue";
 import DefaultTheme from "vitepress/theme";
 import { defaultLanguage, allLanguages, language, enableI18NForThisPage } from "./state.js";
 
@@ -46,6 +46,10 @@ onMounted(() => {
   language.value = lang;
   const langIndex = allLanguages.findIndex((l) => l === lang);
   changeLanguage(langIndex);
+  const body = document.querySelector("body");
+  nextTick(() => {
+    body.classList.add("i18n-loaded");
+  });
 });
 </script>
 

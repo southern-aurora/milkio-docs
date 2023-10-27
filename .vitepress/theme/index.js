@@ -15,19 +15,28 @@ export default {
 
     console.log(router.route);
 
-    watch(
-      () => router.route.path,
-      () => {
-        if (!import.meta.env.SSR) {
-          nextTick(() => {
-            if (document.querySelector(".enable-i18n")) {
-              enableI18NForThisPage.value = true;
-            } else {
-              enableI18NForThisPage.value = false;
-            }
-          })
+    const calcI18N = () => {
+      nextTick(() => {
+        if (document.querySelector(".enable-i18n")) {
+          enableI18NForThisPage.value = true;
+        } else {
+          enableI18NForThisPage.value = false;
         }
-      }
-    )
+      })
+    }
+    if (!import.meta.env.SSR) {
+      watch(
+        () => router.route.path,
+        () => {
+          calcI18N();
+        }
+      );
+    }
+
+    if (!import.meta.env.SSR) {
+      setTimeout(() => {
+        calcI18N();
+      }, 128);
+    }
   },
 };
