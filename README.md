@@ -16,9 +16,9 @@ If you want to view the documentation of Bao, please visit [https://southern-aur
 
 ## How to contribute
 
-Bao Docs 使用 VitePress 作为文档站点的框架，使用 Markdown 作为文档的书写语言。
+Bao Docs 使用 [VitePress](https://vitepress.dev/) 作为文档站点的框架，使用 Markdown 作为文档的书写语言。
 
-Bao Docs uses VitePress as the framework for the documentation site and Markdown as the language for writing documentation.
+Bao Docs uses [VitePress](https://vitepress.dev/) as the framework for the documentation site and Markdown as the language for writing documentation.
 
 但是它有些特殊：你可能注意到了，在文档的 `.md` 源文件中，其中每行都是按照中文、英文、中文、英文……的顺序进行书写的。包括标题也是，即便有些标题在中文语言中，是写作英文的。
 
