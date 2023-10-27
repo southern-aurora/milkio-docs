@@ -9,6 +9,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [],
+    aside: false,
     sidebar: [
       {
         text: "首页",

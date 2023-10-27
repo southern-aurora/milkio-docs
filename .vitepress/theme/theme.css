@@ -3,3 +3,7 @@
   --vp-c-brand-2: #000000;
   --vp-c-brand-3: #000000;
 }
+
+.VPDoc .content {
+  max-width: 720px;
+}
