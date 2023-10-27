@@ -56,8 +56,8 @@ onMounted(() => {
 <template>
   <Layout>
     <template #doc-before>
-      <ClientOnly>
-        <div style="min-height: 48px">
+      <div style="min-height: 48px">
+        <ClientOnly>
           <div class="language-selector" v-if="enableI18NForThisPage">
             <div class="message">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -101,8 +101,8 @@ onMounted(() => {
               There is no i18n version for the current page.
             </div>
           </div>
-        </div>
-      </ClientOnly>
+        </ClientOnly>
+      </div>
     </template>
   </Layout>
 </template>
