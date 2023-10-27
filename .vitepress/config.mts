@@ -11,18 +11,47 @@ export default defineConfig({
     nav: [],
     sidebar: [
       {
-        text: "Index",
-        items: [{ text: "Introduction", link: "/" }],
-      },
-      {
-        text: "Overview",
+        text: `
+          <span class="lang-en">Index</span>
+          <span class="lang-zh">首页</span>
+        `,
         items: [
-          { text: "Install", link: "/markdown/docs/install" },
-          { text: "Generation phase", link: "/markdown/docs/generation-phase" },
+          {
+            text: `
+              <span class="lang-en">Introduction</span>
+              <span class="lang-zh">介绍</span>
+            `,
+            link: "/",
+          },
         ],
       },
       {
-        text: "Abilities",
+        text: `
+          <span class="lang-en">Overview</span>
+          <span class="lang-zh">概述</span>
+        `,
+        items: [
+          {
+            text: `
+              <span class="lang-en">Install</span>
+              <span class="lang-zh">安装</span>
+            `,
+            link: "/markdown/docs/install",
+          },
+          {
+            text: `
+              <span class="lang-en">Generation phase</span>
+              <span class="lang-zh">生成阶段</span>
+            `,
+            link: "/markdown/docs/generation-phase",
+          },
+        ],
+      },
+      {
+        text: `
+          <span class="lang-en">Abilities</span>
+          <span class="lang-zh">能力</span>
+        `,
         items: [
           { text: "Api", link: "/markdown/docs/api" },
           { text: "Middleware", link: "/markdown/docs/middleware" },
@@ -41,15 +70,30 @@ export default defineConfig({
         ],
       },
       {
-        text: "Recipes",
+        text: `
+          <span class="lang-en">Recipes</span>
+          <span class="lang-zh">食谱</span>
+        `,
         items: [
           { text: "Prisma", link: "/markdown/recipes/prisma" },
           { text: "MikrORM", link: "/markdown/recipes/mikro-orm" },
         ],
       },
       {
-        text: "Documentation",
-        items: [{ text: "Contribution", link: "/README" }],
+        text: `
+          <span class="lang-en">Recipes</span>
+          <span class="lang-zh">食谱</span>
+        `,
+        items: [
+          //
+          {
+            text: `
+              <span class="lang-en">Contribution</span>
+              <span class="lang-zh">贡献</span>
+            `,
+            link: "/README",
+          },
+        ],
       },
     ],
     aside: false,

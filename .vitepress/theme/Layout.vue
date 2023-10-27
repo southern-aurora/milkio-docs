@@ -7,6 +7,7 @@ const { Layout } = DefaultTheme;
 
 const changeLanguage = (langIndex) => {
   language.value = allLanguages[langIndex];
+
   localStorage.setItem(".vitepress-select-language", allLanguages[langIndex]);
   const body = document.querySelector("body");
   const classNames = [];
@@ -25,6 +26,14 @@ const changeLanguage = (langIndex) => {
     document.head.appendChild(styleElement);
   }
   let style = "";
+
+  for (const i in allLanguages) {
+    if (Number(i) !== Number(langIndex)) {
+      style = style + "\n" + `.lang-${allLanguages[i]} { display: none !important; }`;
+    } else {
+      style = style + "\n" + `.lang-${allLanguages[i]} { display: inline !important; }`;
+    }
+  }
 
   // docs
   for (const i in allLanguages) {
@@ -56,7 +65,7 @@ onMounted(() => {
 <template>
   <Layout>
     <template #doc-before>
-      <div style="min-height: 48px">
+      <div class="doc-before-container">
         <ClientOnly>
           <div class="language-selector" v-if="enableI18NForThisPage">
             <div class="message">
@@ -66,7 +75,7 @@ onMounted(() => {
                   d="M5 15V17C5 18.0544 5.81588 18.9182 6.85074 18.9945L7 19H10V21H7C4.79086 21 3 19.2091 3 17V15H5ZM18 10L22.4 21H20.245L19.044 18H14.954L13.755 21H11.601L16 10H18ZM17 12.8852L15.753 16H18.245L17 12.8852ZM8 2V4H12V11H8V14H6V11H2V4H6V2H8ZM17 3C19.2091 3 21 4.79086 21 7V9H19V7C19 5.89543 18.1046 5 17 5H14V3H17ZM6 6H4V9H6V6ZM10 6H8V9H10V6Z"
                 ></path>
               </svg>
-              What language do you want to read?
+              <span> What language do you want to read? </span>
             </div>
             <div class="gap"></div>
             <div class="languages">
@@ -108,6 +117,22 @@ onMounted(() => {
 </template>
 
 <style>
+.doc-before-container {
+  min-height: 48px;
+  animation: doc-before-container-in 240ms ease-out;
+  animation-fill-mode: backwards;
+  animation-delay: 640ms;
+}
+
+@keyframes doc-before-container-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .language-selector {
   background-color: var(--vp-c-bg-alt);
   padding: 8px 16px;

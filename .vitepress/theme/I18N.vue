@@ -16,4 +16,8 @@
   /* display: block; */
   opacity: 1;
 }
+
+.lang-zh {
+  display: none;
+}
 </style>

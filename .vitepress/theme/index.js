@@ -13,8 +13,6 @@ export default {
     // register your custom global components
     app.component("I18N", I18N);
 
-    console.log(router.route);
-
     const calcI18N = () => {
       nextTick(() => {
         if (document.querySelector(".enable-i18n")) {
