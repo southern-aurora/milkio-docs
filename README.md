@@ -1,6 +1,8 @@
-# Bao 文档
+<I18N>
 
-# Bao Docs
+# 贡献
+
+# Contribution
 
 欢迎来到 Bao Docs 仓库，这里是 Bao 的文档站点的源代码。
 
@@ -10,17 +12,17 @@ Welcome to the Bao Docs repository, this is the source code of the Bao documenta
 
 If you want to view the documentation of Bao, please visit [https://southern-aurora.github.io/bao-docs/](https://southern-aurora.github.io/bao-docs/).
 
-## 贡献
+## 如何贡献
 
-## Contribution
+## How to contribute
 
 Bao Docs 使用 VitePress 作为文档站点的框架，使用 Markdown 作为文档的书写语言。
 
 Bao Docs uses VitePress as the framework for the documentation site and Markdown as the language for writing documentation.
 
-但是它有些特殊：你可能注意到了，文档中每行都是按照中文、英文、中文、英文……的顺序进行书写的。包括标题也是，即便有些标题在中文中是英文的。
+但是它有些特殊：你可能注意到了，在文档的 `.md` 源文件中，其中每行都是按照中文、英文、中文、英文……的顺序进行书写的。包括标题也是，即便有些标题在中文语言中，是写作英文的。
 
-But it's special: you may have noticed that each line in the documentation is written in Chinese, English, Chinese, English... in order. Including the title, even if some of the titles are in English in Chinese.
+But it has some special features: you may notice that in the `.md` source file of the document, each line is written in Chinese, English, Chinese, English... order. Including the title, even if some titles are written in English in Chinese.
 
 是的，这是因为 Bao Docs 的文档是双语的，我们会在每一行的后面添加英文翻译。这么做，有助于文档的编写者同时书写多种语言的文档，而不需要为每一种语言的文档，都创建一个新的页面。
 
@@ -45,3 +47,5 @@ co dev # 本地预览文档
 ```bash
 co dev # Preview documentation locally
 ```
+
+</I18N>

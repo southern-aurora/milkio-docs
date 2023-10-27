@@ -42,11 +42,15 @@ export default defineConfig({
         ],
       },
       {
-        text: "recipes",
+        text: "Recipes",
         items: [
           { text: "Prisma", link: "/markdown/recipes/prisma" },
           { text: "MikrORM", link: "/markdown/recipes/mikro-orm" },
         ],
+      },
+      {
+        text: "Documentation",
+        items: [{ text: "Contribution", link: "/README" }],
       },
     ],
   },
