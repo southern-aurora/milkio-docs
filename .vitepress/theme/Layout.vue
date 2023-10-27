@@ -138,20 +138,17 @@ onMounted(() => {
 
 .language-selector > .languages {
   display: flex;
-  color: var(--vp-c-brand-1);
 }
 
 .language-selector > .languages > .item {
   display: flex;
   padding: 4px 8px;
   cursor: pointer;
-  color: var(--vp-c-brand-1);
 }
 
 .language-selector > .languages > .item.active {
   font-weight: bold;
   text-decoration: underline;
-  color: var(--vp-c-brand-1);
 }
 
 @media screen and (max-width: 1024px) {
