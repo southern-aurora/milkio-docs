@@ -134,11 +134,11 @@ onMounted(() => {
 
 .language-selector > .languages {
   display: flex;
+  color: var(--vp-c-brand-1);
 }
 
 .language-selector > .languages > .item {
   display: flex;
-  color: #fff;
   padding: 4px 8px;
   cursor: pointer;
   color: var(--vp-c-brand-1);
