@@ -1,3 +1,7 @@
+---
+title: Config
+---
+
 # Config
 
 我们经常需要存储各种配置，比如，与数据库的连接信息、各种秘钥。配置的获取渠道也各有不同，也许是硬编码，也许是 `.env` 文件，也许是环境变量。
@@ -12,7 +16,7 @@
 // file: /src/config/example.ts
 
 export const configExample = {
-  hello: "world"
+  hello: "world",
 };
 ```
 

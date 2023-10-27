@@ -1,3 +1,7 @@
+---
+title: Bootstrap
+---
+
 # Bootstrap
 
 Bootstrap 是一个"魔法"目录，位置在 `/src/bootstrap`。
@@ -11,6 +15,6 @@ Bootstrap 是一个"魔法"目录，位置在 `/src/bootstrap`。
 ```ts
 // file: /src/bootstrap/your-example-bootstrap.ts
 export default async function () {
-  console.log('hello world')
+  console.log("hello world");
 }
 ```

@@ -1,3 +1,7 @@
+---
+title: Generation Phase
+---
+
 # 生成阶段
 
 Bao 在启动前，会进入生成阶段。

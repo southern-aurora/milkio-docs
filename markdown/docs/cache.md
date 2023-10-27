@@ -1,3 +1,7 @@
+---
+title: Cache
+---
+
 # Cache
 
 Cache 可以将一些数据临时保存，并在一定时间后自动过期。合理的缓存数据，可以有效的提高你应用的性能。
@@ -17,10 +21,10 @@ const cache = defineNamespaceCache<UserInfo>("user-info");
 type UserInfo = {
   age: number;
   email: string;
-}
+};
 
-await cache.set('alice', { age: 18, email: 'alice@gmail.com' }, 100);
-console.log(await cache.get('alice'));
+await cache.set("alice", { age: 18, email: "alice@gmail.com" }, 100);
+console.log(await cache.get("alice"));
 // echo: { age: 18, email: 'alice@gmail.com' }
 
 await cache.del();
