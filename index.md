@@ -32,9 +32,9 @@ At this time, Bun's `1.0` version was released. I decided to use her to write th
 
 ## Design philosophy
 
-我崇尚 Go 语言之父 Rob Pike 的["大道至简"](https://go.dev/talks/2015/simplicity-is-complicated.slide#1)。
+我崇尚 Go 语言之父 Rob Pike 的["大道至简"](https://www.youtube.com/watch?v=rFejpH_tAHM)。
 
-I admire Rob Pike, the father of Go, ["Simplicity is Complicated"](https://go.dev/talks/2015/simplicity-is-complicated.slide#1).
+I admire Rob Pike, the father of Go, ["Simplicity is Complicated"](https://www.youtube.com/watch?v=rFejpH_tAHM).
 
 学习曲线，是我在设计 Bao 之初最关注的地方。我希望 Bao 能够尽可能的简单，即便是没有后端经验的前端开发者，也可以在 1 天之内学会 Bao 并开始编写你的后端代码。
 
