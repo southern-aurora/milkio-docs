@@ -60,7 +60,7 @@ Bao is not the kind of framework that, although lightweight, once multiple peopl
 
 ## Why use Bao?
 
-Bao 旨在保证高性能的同时，解决在传统后端开发过程中的痛点，让你在编码过程中，感受到足够的舒适。解放你的大脑，降低心智负担，使你可以专注于你的业务。下面，我们来看举例一些实际的场景，如果你觉得这些点让你感受到了痛苦，不妨来试试 Bao。
+Bao 旨在保证高性能的同时，解决在传统后端开发过程中的痛点，让你在编码过程中，感受到的是舒适而非痛苦。解放你的大脑，降低心智负担，使你可以专注于你的业务。下面，我们来看举例一些实际的场景，如果你觉得这些点让你感受到了痛苦，不妨来试试 Bao。
 
 Bao aims to ensure high performance while solving the pain points in the traditional backend development process, so that you can feel comfortable enough during the coding process. Free your brain, reduce mental burden, and allow you to focus on your business. Next, let's take a look at some actual scenarios. If you feel pain in these points, try Bao.
 
