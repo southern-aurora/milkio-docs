@@ -44,7 +44,7 @@ export const foo = defineApi({
 
 `params` 参数是此 Api 可接受的参数。当一个请求访问此 Api 时，Bao 会自动对请求的数据格式进行校验。如果校验失败，Bao 会返回 `general-type-safe-error` 的失败错误码。
 
-你还可以利用 [Typia](https://typia.io/) 实现更复杂的校验。
+你还可以利用 [Typia](https://typia.io/docs/validators/tags/) 实现更复杂的校验。
 
 ```ts
 import typia from "typia";
