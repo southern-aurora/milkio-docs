@@ -30,9 +30,13 @@ Yes, this is because the documentation of Bao Docs is bilingual, and we will add
 
 For the time being, Bao Docs officially only maintains documentation in two languages: Chinese and English. We hope that the official documentation can be timely and accurate, and our team members can only read and write in Chinese (mother tongue) and English. We welcome developers in the community to build and maintain their own Bao Docs documentation sites in other languages. If you create a new site, please let us know via Issue and we will add a link to your site in the official documentation.
 
-如果你想要为 Bao Docs 贡献文档，你可以直接在 GitHub 上编辑文档，然后提交 Pull Request。如果你想要在本地预览文档，你可以使用以下命令：
+如果你想要为 Bao Docs 贡献文档，你可以直接在 GitHub 上编辑文档，然后提交 Pull Request。
 
-If you want to contribute documentation to Bao Docs, you can edit the documentation directly on GitHub and then submit a Pull Request. If you want to preview the documentation locally, you can use the following command:
+If you want to contribute documentation to Bao Docs, you can edit the documentation directly on GitHub and then submit a Pull Request.
+
+如果你想要在预览文档，你可以使用以下命令：
+
+If you want to preview the documentation, you can use the following command:
 
 ```bash
 co dev # 本地预览文档
