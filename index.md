@@ -196,9 +196,9 @@ If the interface is `GET`, then our parameters cannot be directly serialized int
 
 Given the complexity of HTTP, many traditional frameworks provide routing functions, and write routes to determine how a string of user-entered URLs is mapped to an actual controller.
 
-但 HTTP 的许多设计来源于上一个时代：那个时代还没有前端与后端的分工，HTML 页面是由后端拼接而成的。所以像动态路由、路由参数、重定向等功能，对于如今已经前后端分离、只需要提供 API 供前端调用的我们来说，是没有必要的。
+但 HTTP 的许多设计来源于上一个时代：那个时代还没有前端与后端的分工，HTML 页面是由后端拼接而成的。所以拥有像动态路由、路由参数、重定向等功能，以及各种方法和状态码。对于如今已经前后端分离、只需要提供 API 供前端调用的我们来说，是没有必要的。
 
-But many of HTTP's designs come from the previous era: there was no division of labor between the front end and the back end at that time, and the HTML page was spliced ​​by the back end. So functions such as dynamic routing, routing parameters, redirection, etc., are unnecessary for us who have already separated the front and back ends and only need to provide APIs for the front end to call.
+But many of HTTP's designs come from the previous era: there was no division of labor between the front end and the back end at that time, and the HTML page was spliced ​​by the back end. So it has functions such as dynamic routing, routing parameters, redirection, various methods and status codes. For us who have already separated the front and back ends and only need to provide APIs for the front end to call, it is not necessary.
 
 而且，路由的存在有时也会令我们痛苦：我经常写好了接口但因为忘记添加路由，而导致刷新了半天都找不到页面，最后才回忆起添加路由。
 
