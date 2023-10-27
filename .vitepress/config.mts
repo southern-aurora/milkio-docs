@@ -90,8 +90,8 @@ export default defineConfig({
       },
       {
         text: `
-          <span class="lang-en">Recipes</span>
-          <span class="lang-zh">食谱</span>
+          <span class="lang-en">Document</span>
+          <span class="lang-zh">文档</span>
         `,
         items: [
           //
