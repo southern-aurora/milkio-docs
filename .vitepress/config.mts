@@ -12,18 +12,18 @@ export default defineConfig({
     aside: false,
     sidebar: [
       {
-        text: "首页",
-        items: [{ text: "入门", link: "/" }],
+        text: "Index",
+        items: [{ text: "Introduction", link: "/" }],
       },
       {
-        text: "概述",
+        text: "Overview",
         items: [
-          { text: "安装", link: "/markdown/docs/install" },
-          { text: "生成阶段", link: "/markdown/docs/generation-phase" },
+          { text: "Install", link: "/markdown/docs/install" },
+          { text: "Generation phase", link: "/markdown/docs/generation-phase" },
         ],
       },
       {
-        text: "功能",
+        text: "Abilities",
         items: [
           { text: "Api", link: "/markdown/docs/api" },
           { text: "Middleware", link: "/markdown/docs/middleware" },
@@ -42,7 +42,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "食谱",
+        text: "recipes",
         items: [
           { text: "Prisma", link: "/markdown/recipes/prisma" },
           { text: "MikrORM", link: "/markdown/recipes/mikro-orm" },
