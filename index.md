@@ -4,9 +4,9 @@ outline: deep
 
 <I18N>
 
-# Bao
+# 概述
 
-# Bao
+# Introduction
 
 高性能的 Bun 框架，以人为本，你代码中的人体工学椅。
 
