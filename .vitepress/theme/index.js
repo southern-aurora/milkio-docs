@@ -36,7 +36,7 @@ export default {
     if (!import.meta.env.SSR) {
       setTimeout(() => {
         calcI18N();
-      }, 128);
+      }, 256);
     }
   },
 };

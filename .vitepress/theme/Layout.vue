@@ -109,7 +109,7 @@ onMounted(() => {
 
 <style>
 .language-selector {
-  background-color: var(--vp-input-switch-bg-color);
+  background-color: var(--vp-c-bg-alt);
   padding: 8px 16px;
   border-radius: 8px;
   margin-bottom: 32px;
