@@ -112,7 +112,7 @@ onMounted(() => {
   background-color: var(--vp-input-switch-bg-color);
   padding: 8px 16px;
   border-radius: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
   min-height: 48px;
   display: flex;
   flex-direction: row;

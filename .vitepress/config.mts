@@ -9,7 +9,6 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [],
-    aside: false,
     sidebar: [
       {
         text: "Index",
@@ -53,5 +52,9 @@ export default defineConfig({
         items: [{ text: "Contribution", link: "/README" }],
       },
     ],
+    aside: false,
+    search: {
+      provider: "local",
+    },
   },
 });
