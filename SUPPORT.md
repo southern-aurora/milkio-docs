@@ -1,3 +1,8 @@
+---
+title: Sponsors
+search: false
+---
+
 <I18N>
 
 # 支持者们
