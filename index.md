@@ -4,9 +4,21 @@ outline: deep
 
 # Bao
 
+<I18N><template #zh>
 高性能的 Bun 框架，以人为本，你代码中的人体工学椅。
+</template><template #en>
+High performance Bun framework, people-oriented, ergonomic chair in your code.
+</template></I18N>
+
+<I18N><template #zh>
 
 > Bao 的 1.0 版本尚未发布，有 Api 变更的可能性。不推荐在生产环境中使用。
+
+</template><template #en>
+
+> The 1.0 version of Bao has not been released yet, and there is a possibility of Api changes. Not recommended for use in production.
+
+</template></I18N>
 
 ## Bao 是如何诞生的？
 

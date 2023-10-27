@@ -6,21 +6,9 @@ export default defineConfig({
   title: "BAO",
   description: "高性能的 Bun 框架，以人为本，像你代码中的人体工学椅",
   outDir: "./docs",
-  locales: {
-    root: {
-      label: "中文",
-      lang: "zh",
-    },
-    zh: {
-      label: "English",
-      lang: "en",
-      link: "https://github.com/akirarika/co",
-    },
-  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [],
-
     sidebar: [
       {
         text: "首页",
