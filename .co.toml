@@ -1,0 +1,18 @@
+["general"]
+mixins = ["~/.co.toml", "co:bun"]
+
+
+["dev"]
+commands = ["dev"]
+scripts = ['''
+    bun run docs:dev
+''']
+
+["publish"]
+commands = ["publish", "publ", "p:d"]
+scripts = ['''
+    bun run docs:build
+    && git add --all
+    && git commit -m "docs: update"
+    && git push
+''']
