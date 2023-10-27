@@ -8,10 +8,12 @@
 
 <style>
 :not(.i18n-loaded) .enable-i18n {
-  display: none;
+  /* display: none; */
+  opacity: 0;
 }
 
 .i18n-loaded .enable-i18n {
-  display: block;
+  /* display: block; */
+  opacity: 1;
 }
 </style>
