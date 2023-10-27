@@ -8,7 +8,16 @@ export default defineConfig({
   outDir: "./docs",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [],
+    socialLinks: [{ icon: "github", link: "https://github.com/southern-aurora/bao" }],
+    nav: [
+      {
+        text: `
+          <span class="lang-en">Sponsors</span>
+          <span class="lang-zh">支持者们</span>
+        `,
+        link: "/SUPPORT",
+      },
+    ],
     sidebar: [
       {
         text: `

@@ -1,7 +1,7 @@
 <script setup>
 import { onMounted, ref, nextTick } from "vue";
 import DefaultTheme from "vitepress/theme";
-import { defaultLanguage, allLanguages, language, enableI18NForThisPage } from "./state.js";
+import { improveUrl, defaultLanguage, allLanguages, language, enableI18NForThisPage } from "./state.js";
 
 const { Layout } = DefaultTheme;
 
@@ -79,24 +79,8 @@ onMounted(() => {
             </div>
             <div class="gap"></div>
             <div class="languages">
-              <div
-                class="item"
-                :class="{
-                  active: language === allLanguages[1],
-                }"
-                @click="changeLanguage(1)"
-              >
-                English
-              </div>
-              <div
-                class="item"
-                :class="{
-                  active: language === allLanguages[0],
-                }"
-                @click="changeLanguage(0)"
-              >
-                中文
-              </div>
+              <div v-if="language === allLanguages[0]" class="button" @click="changeLanguage(1)">Read in English</div>
+              <div v-else class="button" @click="changeLanguage(0)">阅读中文</div>
             </div>
           </div>
           <div class="language-selector" v-else>
@@ -107,8 +91,10 @@ onMounted(() => {
                   d="M5 15V17C5 18.0544 5.81588 18.9182 6.85074 18.9945L7 19H10V21H7C4.79086 21 3 19.2091 3 17V15H5ZM18 10L22.4 21H20.245L19.044 18H14.954L13.755 21H11.601L16 10H18ZM17 12.8852L15.753 16H18.245L17 12.8852ZM8 2V4H12V11H8V14H6V11H2V4H6V2H8ZM17 3C19.2091 3 21 4.79086 21 7V9H19V7C19 5.89543 18.1046 5 17 5H14V3H17ZM6 6H4V9H6V6ZM10 6H8V9H10V6Z"
                 ></path>
               </svg>
-              There is no i18n version for the current page.
+              It looks like this page doesn't have multilingual support yet!
             </div>
+            <div class="gap"></div>
+            <a class="button" :href="improveUrl" target="_blank">IMPROVE</a>
           </div>
         </ClientOnly>
       </div>
@@ -155,10 +141,21 @@ onMounted(() => {
 .language-selector > .message > svg {
   width: 20px;
   margin-right: 8px;
+  flex-shrink: 0;
 }
 
 .language-selector > .gap {
   flex: 1;
+}
+
+.language-selector .button {
+  display: flex;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 0.8em;
+  font-weight: bold;
+  background-color: var(--vp-c-bg);
 }
 
 .language-selector > .languages {
