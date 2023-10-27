@@ -2,10 +2,10 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/bao/",
+  base: "/bao-docs/",
   title: "BAO",
-  outDir: "./docs",
   description: "高性能的 Bun 框架，以人为本，像你代码中的人体工学椅",
+  outDir: "./docs",
   locales: {
     root: {
       label: "中文",
