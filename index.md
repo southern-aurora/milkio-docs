@@ -20,9 +20,9 @@ High performance Bun framework, people-oriented, ergonomic chair in your code.
 
 ## How was Bao born?
 
-在创造 Bao (中国语中"包子"的意思) 之前，我曾经尝试过很多框架，只是，我没有找到一个框架，它能够让我在开发的时候，感觉到足够的舒适。
+在创造 Bao (中国语中["包子"](https://en.wikipedia.org/wiki/Baozi)的意思) 之前，我曾经尝试过很多框架，只是，我没有找到一个框架，它能够让我在开发的时候，感觉到足够的舒适。
 
-Before creating Bao (meaning "包子" in Chinese), I tried many frameworks, but I didn't find a framework that would make me feel comfortable enough when I was developing.
+Before creating Bao (meaning ["Baozi"](https://en.wikipedia.org/wiki/Baozi) in Chinese), I tried many frameworks, but I didn't find a framework that would make me feel comfortable enough when I was developing.
 
 最终，我决定自己创造一个框架，她通过许多巧妙的设计，让你在编码过程中降低心智负担、解放大脑，同时兼顾性能。
 
