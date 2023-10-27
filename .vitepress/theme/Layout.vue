@@ -57,47 +57,49 @@ onMounted(() => {
   <Layout>
     <template #doc-before>
       <ClientOnly>
-        <div class="language-selector" v-if="enableI18NForThisPage">
-          <div class="message">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                fill="var(--vp-c-text-1)"
-                d="M5 15V17C5 18.0544 5.81588 18.9182 6.85074 18.9945L7 19H10V21H7C4.79086 21 3 19.2091 3 17V15H5ZM18 10L22.4 21H20.245L19.044 18H14.954L13.755 21H11.601L16 10H18ZM17 12.8852L15.753 16H18.245L17 12.8852ZM8 2V4H12V11H8V14H6V11H2V4H6V2H8ZM17 3C19.2091 3 21 4.79086 21 7V9H19V7C19 5.89543 18.1046 5 17 5H14V3H17ZM6 6H4V9H6V6ZM10 6H8V9H10V6Z"
-              ></path>
-            </svg>
-            What language do you want to read?
-          </div>
-          <div class="gap"></div>
-          <div class="languages">
-            <div
-              class="item"
-              :class="{
-                active: language === allLanguages[1],
-              }"
-              @click="changeLanguage(1)"
-            >
-              English
+        <div style="min-height: 48px">
+          <div class="language-selector" v-if="enableI18NForThisPage">
+            <div class="message">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  fill="var(--vp-c-text-1)"
+                  d="M5 15V17C5 18.0544 5.81588 18.9182 6.85074 18.9945L7 19H10V21H7C4.79086 21 3 19.2091 3 17V15H5ZM18 10L22.4 21H20.245L19.044 18H14.954L13.755 21H11.601L16 10H18ZM17 12.8852L15.753 16H18.245L17 12.8852ZM8 2V4H12V11H8V14H6V11H2V4H6V2H8ZM17 3C19.2091 3 21 4.79086 21 7V9H19V7C19 5.89543 18.1046 5 17 5H14V3H17ZM6 6H4V9H6V6ZM10 6H8V9H10V6Z"
+                ></path>
+              </svg>
+              What language do you want to read?
             </div>
-            <div
-              class="item"
-              :class="{
-                active: language === allLanguages[0],
-              }"
-              @click="changeLanguage(0)"
-            >
-              中文
+            <div class="gap"></div>
+            <div class="languages">
+              <div
+                class="item"
+                :class="{
+                  active: language === allLanguages[1],
+                }"
+                @click="changeLanguage(1)"
+              >
+                English
+              </div>
+              <div
+                class="item"
+                :class="{
+                  active: language === allLanguages[0],
+                }"
+                @click="changeLanguage(0)"
+              >
+                中文
+              </div>
             </div>
           </div>
-        </div>
-        <div class="language-selector" v-else>
-          <div class="message">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                fill="var(--vp-c-text-1)"
-                d="M5 15V17C5 18.0544 5.81588 18.9182 6.85074 18.9945L7 19H10V21H7C4.79086 21 3 19.2091 3 17V15H5ZM18 10L22.4 21H20.245L19.044 18H14.954L13.755 21H11.601L16 10H18ZM17 12.8852L15.753 16H18.245L17 12.8852ZM8 2V4H12V11H8V14H6V11H2V4H6V2H8ZM17 3C19.2091 3 21 4.79086 21 7V9H19V7C19 5.89543 18.1046 5 17 5H14V3H17ZM6 6H4V9H6V6ZM10 6H8V9H10V6Z"
-              ></path>
-            </svg>
-            There is no i18n version for the current page.
+          <div class="language-selector" v-else>
+            <div class="message">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  fill="var(--vp-c-text-1)"
+                  d="M5 15V17C5 18.0544 5.81588 18.9182 6.85074 18.9945L7 19H10V21H7C4.79086 21 3 19.2091 3 17V15H5ZM18 10L22.4 21H20.245L19.044 18H14.954L13.755 21H11.601L16 10H18ZM17 12.8852L15.753 16H18.245L17 12.8852ZM8 2V4H12V11H8V14H6V11H2V4H6V2H8ZM17 3C19.2091 3 21 4.79086 21 7V9H19V7C19 5.89543 18.1046 5 17 5H14V3H17ZM6 6H4V9H6V6ZM10 6H8V9H10V6Z"
+                ></path>
+              </svg>
+              There is no i18n version for the current page.
+            </div>
           </div>
         </div>
       </ClientOnly>
