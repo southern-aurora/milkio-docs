@@ -147,6 +147,7 @@ onMounted(() => {
 .language-selector > .languages > .item.active {
   font-weight: bold;
   text-decoration: underline;
+  color: var(--vp-c-brand-1);
 }
 
 @media screen and (max-width: 1024px) {
