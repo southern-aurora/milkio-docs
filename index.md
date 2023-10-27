@@ -6,7 +6,7 @@
 
 高性能的 Bun 框架，以人为本，你代码中的人体工学椅。
 
-High performance Bun framework, people-oriented, ergonomic chair in your code.
+High performance Bun framework, human-centered, ergonomic chair in your code.
 
 > Bao 的 1.0 版本尚未发布，有 Api 变更的可能性。不推荐在生产环境中使用。
 
