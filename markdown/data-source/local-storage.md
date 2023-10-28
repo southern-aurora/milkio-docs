@@ -8,4 +8,8 @@ title: LocalStorage
 
 # LocalStorage
 
+To Be Continued
+
+To Be Continued
+
 </I18N>

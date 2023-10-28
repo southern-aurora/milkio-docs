@@ -115,6 +115,19 @@ export default defineConfig({
       },
       {
         text: `
+          <span class="lang-en">Packages</span>
+          <span class="lang-zh">Packages 包</span>
+        `,
+        items: [
+          //
+          {
+            text: `SharedWorker`,
+            link: "/markdown/packages/shared-worker",
+          },
+        ],
+      },
+      {
+        text: `
           <span class="lang-en">Document</span>
           <span class="lang-zh">文档</span>
         `,
