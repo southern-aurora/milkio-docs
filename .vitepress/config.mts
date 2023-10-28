@@ -75,7 +75,7 @@ export default defineConfig({
               <span class="lang-en">Service</span>
               <span class="lang-zh">Service 服务</span>
             `,
-            link: "/markdown/docs/servicess",
+            link: "/markdown/docs/services",
           },
           {
             text: `
