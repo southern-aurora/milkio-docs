@@ -21,7 +21,7 @@ Service is a collection of asynchronous methods, which is very useful in enginee
 Create a service through `defineService`, in a service, you can only have asynchronous methods.
 
 ```ts
-const milkio = defineMilkio({
+let milkio = defineMilkio({
   // ...
 });
 
@@ -34,7 +34,7 @@ const foo = defineService({
 ```
 
 ```ts
-const milkio = defineMilkio({
+let milkio = defineMilkio({
   // ...
 });
 
@@ -51,11 +51,11 @@ const foo = defineService({
 After creating a service, you can use `use` to mount it to the Milkio instance.
 
 ```ts
-milkio.use({ foo });
+milkio = milkio.use({ foo });
 ```
 
 ```ts
-milkio.use({ foo });
+milkio = milkio.use({ foo });
 ```
 
 接下来，我们就可以直接通过 Milkio 实例来调用服务中的方法了。
