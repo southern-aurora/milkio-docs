@@ -2,13 +2,13 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/bao-docs/",
-  title: "Bao Docs",
+  base: "/milkio-docs/",
+  title: "Milkio Docs",
   description: "A human-centered Bun framework, developing APIs is now easy enough!",
   outDir: "./docs",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    socialLinks: [{ icon: "github", link: "https://github.com/southern-aurora/bao" }],
+    socialLinks: [{ icon: "github", link: "https://github.com/southern-aurora/milkio" }],
     nav: [
       {
         text: `
@@ -42,17 +42,10 @@ export default defineConfig({
         items: [
           {
             text: `
-              <span class="lang-en">Install</span>
-              <span class="lang-zh">安装</span>
+              <span class="lang-en">QuickStart</span>
+              <span class="lang-zh">快速开始</span>
             `,
-            link: "/markdown/docs/install",
-          },
-          {
-            text: `
-              <span class="lang-en">GenerationPhase</span>
-              <span class="lang-zh">生成阶段</span>
-            `,
-            link: "/markdown/docs/generation-phase",
+            link: "/markdown/docs/quick-start",
           },
         ],
       },
@@ -62,114 +55,62 @@ export default defineConfig({
           <span class="lang-zh">能力</span>
         `,
         items: [
+          //
           {
             text: `
-              <span class="lang-en">Api</span>
-              <span class="lang-zh">Api 接口</span>
+              <span class="lang-en">State</span>
+              <span class="lang-zh">State 状态</span>
             `,
-            link: "/markdown/docs/api",
+            link: "/markdown/docs/states",
           },
           {
             text: `
-              <span class="lang-en">Middleware</span>
-              <span class="lang-zh">Middleware 中间件</span>
+              <span class="lang-en">Event</span>
+              <span class="lang-zh">Event 事件</span>
             `,
-            link: "/markdown/docs/middleware",
+            link: "/markdown/docs/events",
           },
           {
             text: `
-              <span class="lang-en">Bootstrap</span>
-              <span class="lang-zh">Bootstrap 启动项</span>
+              <span class="lang-en">Service</span>
+              <span class="lang-zh">Service 服务</span>
             `,
-            link: "/markdown/docs/bootstrap",
+            link: "/markdown/docs/servicess",
           },
           {
             text: `
-              <span class="lang-en">Use</span>
-              <span class="lang-zh">Use 使用</span>
+              <span class="lang-en">Shadow</span>
+              <span class="lang-zh">Shadow 影子</span>
             `,
-            link: "/markdown/docs/use",
+            link: "/markdown/docs/shadow",
           },
           {
             text: `
-              <span class="lang-en">Meta</span>
-              <span class="lang-zh">Meta 元数据</span>
+              <span class="lang-en">DataSource</span>
+              <span class="lang-zh">DataSource 数据源</span>
             `,
-            link: "/markdown/docs/meta",
-          },
-          {
-            text: `
-              <span class="lang-en">Context</span>
-              <span class="lang-zh">Context 上下文</span>
-            `,
-            link: "/markdown/docs/context",
-          },
-          {
-            text: `
-              <span class="lang-en">Config</span>
-              <span class="lang-zh">Config 配置</span>
-            `,
-            link: "/markdown/docs/config",
-          },
-          {
-            text: `
-              <span class="lang-en">ConfigFramework</span>
-              <span class="lang-zh">ConfigFramework 框架配置</span>
-            `,
-            link: "/markdown/docs/config-framework",
-          },
-          {
-            text: `
-              <span class="lang-en">Cache</span>
-              <span class="lang-zh">Cache 缓存</span>
-            `,
-            link: "/markdown/docs/cache",
-          },
-          {
-            text: `
-              <span class="lang-en">Logger</span>
-              <span class="lang-zh">Logger 日志</span>
-            `,
-            link: "/markdown/docs/logger",
-          },
-          {
-            text: `
-              <span class="lang-en">Database</span>
-              <span class="lang-zh">Database 数据库</span>
-            `,
-            link: "/markdown/docs/database",
-          },
-          {
-            text: `
-              <span class="lang-en">FailureHandling</span>
-              <span class="lang-zh">FailureHandling 失败处理</span>
-            `,
-            link: "/markdown/docs/fail-handling",
-          },
-          {
-            text: `
-              <span class="lang-en">Client</span>
-              <span class="lang-zh">Client 客户端</span>
-            `,
-            link: "/markdown/docs/client",
-          },
-          {
-            text: `
-              <span class="lang-en">Test</span>
-              <span class="lang-zh">Test 测试</span>
-            `,
-            link: "/markdown/docs/test",
+            link: "/markdown/docs/data-source",
           },
         ],
       },
       {
         text: `
-          <span class="lang-en">Recipes</span>
-          <span class="lang-zh">食谱</span>
+          <span class="lang-en">DataSource</span>
+          <span class="lang-zh">数据源</span>
         `,
         items: [
-          { text: "Prisma", link: "/markdown/recipes/prisma" },
-          { text: "MikrORM", link: "/markdown/recipes/mikro-orm" },
+          //
+          {
+            text: `LocalStorage`,
+            link: "/markdown/data-source/local-storage",
+          },
+          {
+            text: `
+              <span class="lang-en">Custom</span>
+              <span class="lang-zh">自定义</span>
+            `,
+            link: "/markdown/data-source/custom",
+          },
         ],
       },
       {
